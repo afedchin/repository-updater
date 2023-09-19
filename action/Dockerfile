@@ -14,4 +14,6 @@ RUN \
 
 COPY entrypoint.sh /entrypoint.sh
 
+COPY github.py /usr/local/lib/python3.11/site-packages/repositoryupdater/
+
 ENTRYPOINT ["/entrypoint.sh"]
